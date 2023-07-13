@@ -6,7 +6,7 @@ Flag should start with `53f3`
 
 **Solves**: 2
 
-**Attachment**: [AfiXRevRev.class](/AfiXRevRev.class)
+**Attachment**: [AfiXRevRev.class](AfiXRevRev.class)
 
 **Flag**:  *HACKFEST{53f3353043b3E75086dF686941737B3108e7D1607CA64c107Ac1F73E4e6373E6}*
 
