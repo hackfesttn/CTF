@@ -11,3 +11,4 @@ One of our client came to us with this and asked us to investigate. So, investig
 **Flag**:  *Hackfest{y0u_truly-4re_4-f0rensic5_1nvest1gat0r}*
 
 **Write-up**:
+- https://github.com/kujen5/Writeups/tree/main/Hackfest%207.0%20/Digital%20Forensics%20-%20Ransomware
