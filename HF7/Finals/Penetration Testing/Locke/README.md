@@ -15,3 +15,4 @@ Bruteforcing and Fuzzing are not allowed!
 **Flag**:  *Hackfest{70de14735437fb48ccc1c85604983b5c}*
 
 **Write-up**:
+- https://github.com/kujen5/Writeups/tree/main/Hackfest%207.0%20/Penetration%20Testing%20-%20Locke
