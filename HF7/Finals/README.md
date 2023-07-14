@@ -1,5 +1,9 @@
 Write-ups for Hackfest CTF 7 Finals :)
 
+# Date & Time
+- Start time: Saturday, June 10th 2023, 3:00:00 pm GMT+2 (Central European Summer Time)
+- End time: Saturday, June 24th 2023, 9:40:00 am GMT+2 (Central European Summer Time)
+
 # Scoreboard
 
 | Place | Team | Score |
