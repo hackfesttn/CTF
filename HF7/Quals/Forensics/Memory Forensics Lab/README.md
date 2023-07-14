@@ -18,7 +18,7 @@ Q1: What is the Operating System of the machine being investigated?
 
 **Attachment**: [https://drive.google.com/file/d/1gnvkBteAa4idK12yPV1VE5Z3MZKPKW3u/view?usp=sharing](https://drive.google.com/file/d/1gnvkBteAa4idK12yPV1VE5Z3MZKPKW3u/view?usp=sharing)
 
-## Q1
+## Q1: What is the Operating System of the machine being investigated?
 
 **Solves**: 22
 
@@ -26,7 +26,7 @@ Q1: What is the Operating System of the machine being investigated?
 
 **Write-up**:
 
-## Q2
+## Q2: What is the maro’s system password ?
 
 **Solves**: 13
 
@@ -35,7 +35,7 @@ Q1: What is the Operating System of the machine being investigated?
 **Write-up**:
 
 
-## Q3
+## Q3: What is the computer Name ?
 
 **Solves**: 23
 
@@ -43,7 +43,7 @@ Q1: What is the Operating System of the machine being investigated?
 
 **Write-up**:
 
-## Q4
+## Q4: What is the IP address of the machine ?
 
 **Solves**: 23
 
@@ -51,4 +51,107 @@ Q1: What is the Operating System of the machine being investigated?
 
 **Write-up**:
 
-...
+## Q5: What is the IRC client Software used by the user ?
+
+**Solves**: 23
+
+**Flag**:  *mIRC*
+
+**Write-up**:
+
+
+## Q6: What is the user’s IRC account Password ?
+
+**Solves**: 18
+
+**Flag**:  *uFB646Vm9CscCwzR*
+
+**Write-up**:
+
+
+## Q7: What is the user’s IRC account Password ?
+
+**Solves**: 18
+
+**Flag**:  *freenode_infosec*
+
+**Write-up**:
+
+
+## Q8: What is the Nickname of the attacker? What is the suspicious URL visited by the victim? 
+
+**Solves**: 12
+
+**Flag**:  *bitsmasher_codewaver_https://file.io/yBBkJc*
+
+**Write-up**:
+
+## Q9: What is the suspucious file that has been downloaded ?
+
+**Solves**: 12
+
+**Flag**:  *CyberSecurity_Books_Courses_Tutorials.exe.torrent*
+
+**Write-up**:
+
+
+## Q10: What is the torrent site/url ?
+
+**Solves**: 1
+
+**Flag**:  *bit.smasher.io/torrent-infected-k19*
+
+**Write-up**:
+
+
+## Q11: What is the malware's process name ?
+
+**Solves**: 16
+
+**Flag**:  *crypt0r.exe*
+
+**Write-up**:
+
+
+## Q12: What is the type of this malware? Is it a known malware ?
+
+**Solves**: 12
+
+**Flag**:  *Ransomware_HiddenTear*
+
+**Write-up**:
+
+
+## Q13: What is the Bitcoin address of the attacker ?
+
+**Solves**: 9
+
+**Flag**:  *13gwqwqH1h7UYFvyyuD9yjD1vg5yUmS682*
+
+**Write-up**:
+
+## Q14: What is the malware's control server ?
+
+**Solves**: 5
+
+**Flag**:  *http://www.bitsmasher.me/victimes.php?info=LAB-VM-C57C-maro%20WtscbSEbLmfh2AJ*
+
+**Write-up**:
+
+
+## Q15: What is the Encryption password ?
+
+**Solves**: 4
+
+**Flag**:  *WtscbSEbLmfh2AJ*
+
+**Write-up**:
+
+
+## Q16: Recover the secret !
+
+**Solves**: 3
+
+**Flag**:  *JcE2gHzp6C9ykkQZ*
+
+**Write-up**:
